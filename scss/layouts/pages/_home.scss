@@ -1,0 +1,175 @@
+.banner-section{
+    .carousel{
+        img{
+            height: 60vh;
+        }
+        .carousel-caption{
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            text-align: right;
+            bottom: initial;
+        
+        }
+        .filter-box{
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+            span{
+                background-color: $primary-color;
+                color: white;
+                display: block;
+                height: 100%;
+                padding: 20px;
+                text-wrap: nowrap;
+            }
+            form{
+            background-color: #E6E6E6;
+            padding: 10px;
+            .button-custome{
+                border: none;
+            }
+            }
+        }
+    }
+}
+
+.about-us{
+    border-bottom: 1px solid gainsboro;
+    .title{
+        background-color: $primary-color;
+        padding: 10px 20px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 22px;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .button-custome{
+        display: block;
+        width: fit-content;
+
+       margin-left: auto;
+    }
+
+    ul{
+        li{
+            margin-bottom: 5px;
+            i{
+                color: $primary-color;
+                padding-right: 10px;
+            }
+            a{
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.specialities-card{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    .heading{
+        position: absolute;
+        left: 0px;
+        bottom: 30px;
+        background-color: $secondary-color;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+    }
+    img{
+        height: 260px;
+        transition: 0.4s;
+    }
+    &:hover{
+        img{
+            transform: scale(1.2);
+        }
+        .heading{
+            background-color: $primary-color;
+        }
+    }
+}
+
+.best-selling{
+    .nav-tabs{
+        border-bottom: none;
+        .nav-link{
+            background-color: $primary-color;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 0px;
+            border: none;
+            font-size: 14px;
+            padding: 8px 25px;
+            &.active{
+                background-color: $secondary-color;
+            }
+        }
+    }
+
+    .best-selling-card{
+        position: relative;
+        .price{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: $secondary-color;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 20px;
+            opacity: 0;
+            transition: 0.4s;
+        }
+        img{
+            height: 260px;
+        }
+        .details{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            .title{
+                background-color: #0b732ac2;
+            height: 100%;
+
+              h3{
+                color: white;
+                font-size: 16px;
+                text-transform: uppercase;
+                padding: 10px;
+                margin-bottom: 0;
+              }
+            }
+        
+            .duration{
+                background-color: $secondary-color;
+                color: white;
+                font-size: 16px;
+                text-transform: uppercase;
+                padding: 10px;
+            }
+
+        }
+        &:hover{
+            .price{
+                opacity: 1;
+            }
+            img{
+                opacity: 0.7;
+            }
+        }
+    }
+}

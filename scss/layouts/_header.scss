@@ -20,7 +20,9 @@ header {
         .navbar-brand{
             border: 5px solid $secondary-color;
             position: absolute;
-            top: -60px;
+            top: -52px;
+            z-index: 2;
+            padding-block: 0px;
         }
         .navbar-nav{
             .nav-item{

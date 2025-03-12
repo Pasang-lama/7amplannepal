@@ -27,3 +27,22 @@ body{
     color: #333;
     font-weight: 400;
 }
+
+.button-custome{
+    background-color: $secondary-color;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    &:hover{
+        background-color: $primary-color;
+    }
+}
+
+.section-heading{
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}

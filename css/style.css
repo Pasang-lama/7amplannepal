@@ -22,6 +22,25 @@ body {
   font-weight: 400;
 }
 
+.button-custome {
+  background-color: #ED7701;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.button-custome:hover {
+  background-color: #0B732B;
+}
+
+.section-heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: #0B732B;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
 header .top-header {
   background-color: #088F33;
 }
@@ -42,7 +61,9 @@ header .navigation-bar {
 header .navigation-bar .navbar-brand {
   border: 5px solid #ED7701;
   position: absolute;
-  top: -60px;
+  top: -52px;
+  z-index: 2;
+  padding-block: 0px;
 }
 header .navigation-bar .navbar-nav .nav-item .nav-link {
   color: white;
@@ -50,4 +71,162 @@ header .navigation-bar .navbar-nav .nav-item .nav-link {
 }
 header .navigation-bar .navbar-nav .nav-item .nav-link:hover {
   background-color: #ED7701 !important;
+}
+
+.banner-section .carousel img {
+  height: 60vh;
+}
+.banner-section .carousel .carousel-caption {
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  text-align: right;
+  bottom: initial;
+}
+.banner-section .carousel .filter-box {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+.banner-section .carousel .filter-box span {
+  background-color: #0B732B;
+  color: white;
+  display: block;
+  height: 100%;
+  padding: 20px;
+  text-wrap: nowrap;
+}
+.banner-section .carousel .filter-box form {
+  background-color: #E6E6E6;
+  padding: 10px;
+}
+.banner-section .carousel .filter-box form .button-custome {
+  border: none;
+}
+
+.about-us {
+  border-bottom: 1px solid gainsboro;
+}
+.about-us .title {
+  background-color: #0B732B;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.about-us .button-custome {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+.about-us ul li {
+  margin-bottom: 5px;
+}
+.about-us ul li i {
+  color: #0B732B;
+  padding-right: 10px;
+}
+.about-us ul li a {
+  font-weight: 500;
+}
+.about-us ul li a:hover {
+  text-decoration: underline;
+}
+
+.specialities-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.specialities-card .heading {
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  background-color: #ED7701;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+.specialities-card img {
+  height: 260px;
+  transition: 0.4s;
+}
+.specialities-card:hover img {
+  transform: scale(1.2);
+}
+.specialities-card:hover .heading {
+  background-color: #0B732B;
+}
+
+.best-selling .nav-tabs {
+  border-bottom: none;
+}
+.best-selling .nav-tabs .nav-link {
+  background-color: #0B732B;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0px;
+  border: none;
+  font-size: 14px;
+  padding: 8px 25px;
+}
+.best-selling .nav-tabs .nav-link.active {
+  background-color: #ED7701;
+}
+.best-selling .best-selling-card {
+  position: relative;
+}
+.best-selling .best-selling-card .price {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #ED7701;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.best-selling .best-selling-card img {
+  height: 260px;
+}
+.best-selling .best-selling-card .details {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.best-selling .best-selling-card .details .title {
+  background-color: rgba(11, 115, 42, 0.7607843137);
+  height: 100%;
+}
+.best-selling .best-selling-card .details .title h3 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 0;
+}
+.best-selling .best-selling-card .details .duration {
+  background-color: #ED7701;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.best-selling .best-selling-card:hover .price {
+  opacity: 1;
+}
+.best-selling .best-selling-card:hover img {
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */
